@@ -1,0 +1,69 @@
+import { Link, useLocation } from "wouter";
+import { LayoutDashboard, Camera, UploadCloud, LineChart, Settings, Bird } from "lucide-react";
+import { motion } from "framer-motion";
+
+const navItems = [
+  { href: "/", label: "Dashboard", icon: LayoutDashboard },
+  { href: "/live", label: "Live Detection", icon: Camera },
+  { href: "/upload", label: "Upload", icon: UploadCloud },
+  { href: "/analytics", label: "Analytics", icon: LineChart },
+  { href: "/settings", label: "Settings", icon: Settings },
+];
+
+export function Sidebar() {
+  const [location] = useLocation();
+
+  return (
+    <aside className="fixed inset-y-0 left-0 w-72 sidebar-gradient rounded-r-[40px] shadow-2xl flex flex-col z-50 overflow-hidden">
+      {/* Abstract Bird Watermark */}
+      <div className="absolute -bottom-20 -right-20 opacity-[0.08] pointer-events-none rotate-12">
+        <Bird className="w-[350px] h-[350px] text-white" />
+      </div>
+
+      <div className="p-8 flex items-center gap-4 relative z-10">
+        <div className="bg-white/10 p-3 rounded-2xl backdrop-blur-md border border-white/20">
+          <Bird className="w-8 h-8 text-accent" />
+        </div>
+        <div>
+          <h1 className="text-2xl font-display font-bold text-white tracking-wide">Bird<span className="text-accent">Vision</span></h1>
+          <p className="text-white/60 text-xs uppercase tracking-widest font-medium">Sinhala Edition</p>
+        </div>
+      </div>
+
+      <nav className="flex-1 px-4 py-8 space-y-2 relative z-10">
+        {navItems.map((item) => {
+          const isActive = location === item.href;
+          return (
+            <Link key={item.href} href={item.href} className="block relative">
+              <div className={`
+                flex items-center gap-4 px-6 py-4 rounded-2xl transition-all duration-300 group
+                ${isActive ? 'bg-white/10 text-white' : 'text-white/60 hover:text-white hover:bg-white/5'}
+              `}>
+                {isActive && (
+                  <motion.div 
+                    layoutId="active-nav"
+                    className="absolute left-0 w-1.5 h-8 bg-accent rounded-r-full"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                )}
+                <item.icon className={`w-5 h-5 transition-transform duration-300 ${isActive ? 'text-accent' : 'group-hover:scale-110'}`} />
+                <span className="font-medium text-lg">{item.label}</span>
+              </div>
+            </Link>
+          );
+        })}
+      </nav>
+
+      <div className="p-8 relative z-10">
+        <div className="bg-black/20 rounded-2xl p-4 border border-white/10 backdrop-blur-sm">
+          <div className="flex items-center gap-3">
+            <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+            <span className="text-white/80 text-sm font-medium">System Online</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+  );
+}
