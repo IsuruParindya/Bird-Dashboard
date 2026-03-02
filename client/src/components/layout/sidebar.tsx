@@ -16,17 +16,21 @@ export function Sidebar() {
   return (
     <aside className="fixed inset-y-0 left-0 w-72 sidebar-gradient rounded-r-[40px] shadow-2xl flex flex-col z-50 overflow-hidden">
       {/* Abstract Bird Watermark */}
-      <div className="absolute -bottom-20 -right-20 opacity-[0.08] pointer-events-none rotate-12">
-        <Bird className="w-[350px] h-[350px] text-white" />
+      <div className="absolute inset-0 flex items-end justify-center opacity-[0.15] pointer-events-none">
+        <img
+        src="/boris.png"
+        alt="Bird Watermark"
+        className="w-[600px] scale-125 object-contain"
+        />
       </div>
 
       <div className="p-8 flex items-center gap-4 relative z-10">
         <div className="bg-white/10 p-3 rounded-2xl backdrop-blur-md border border-white/20">
-          <Bird className="w-8 h-8 text-accent" />
+          <Bird className="w-8 h-8 text-white" />
         </div>
         <div>
           <h1 className="text-2xl font-display font-bold text-white tracking-wide">Bird<span className="text-accent">Vision</span></h1>
-          <p className="text-white/60 text-xs uppercase tracking-widest font-medium">Sinhala Edition</p>
+          <p className="text-white/60 text-xs tracking-widest font-outfit">Bilingual Supports</p>
         </div>
       </div>
 
