@@ -1,12 +1,12 @@
 import { Link, useLocation } from "wouter";
-import { LayoutDashboard, Camera, UploadCloud, LineChart, Settings, Bird } from "lucide-react";
+import { LayoutDashboard, FolderUp, ChartSpline, Settings, Bird, Cctv } from "lucide-react";
 import { motion } from "framer-motion";
 
 const navItems = [
   { href: "/", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/live", label: "Live Detection", icon: Camera },
-  { href: "/upload", label: "Upload", icon: UploadCloud },
-  { href: "/analytics", label: "Analytics", icon: LineChart },
+  { href: "/live", label: "Live Detection", icon: Cctv },
+  { href: "/upload", label: "Upload", icon: FolderUp },
+  { href: "/analytics", label: "Analytics", icon: ChartSpline },
   { href: "/settings", label: "Settings", icon: Settings },
 ];
 
@@ -40,7 +40,7 @@ export function Sidebar() {
                 ${isActive ? 'bg-white/10 text-white' : 'text-white/60 hover:text-white hover:bg-white/5'}
               `}>
                 {isActive && (
-                  <motion.div 
+                  <motion.div
                     layoutId="active-nav"
                     className="absolute left-0 w-1.5 h-8 bg-accent rounded-r-full"
                     initial={{ opacity: 0 }}
