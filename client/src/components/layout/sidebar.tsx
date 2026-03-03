@@ -60,7 +60,7 @@ export function Sidebar() {
         })}
       </nav>
 
-      <div className="p-8 relative z-10">
+      <div className="p-5 relative z-10">
         <div className="bg-black/20 rounded-2xl p-4 border border-white/10 backdrop-blur-sm">
           <div className="flex items-center gap-3">
             <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
