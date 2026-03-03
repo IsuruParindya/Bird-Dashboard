@@ -1,16 +1,5 @@
 import { AppLayout } from "@/components/layout/app-layout";
-import {
-  LineChart,
-  Line,
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-} from "recharts";
-
+import {LineChart,Line,BarChart,Bar,XAxis,YAxis,CartesianGrid,Tooltip,ResponsiveContainer,} from "recharts";
 import { useLanguage } from "./LanguageContext";
 
 type LangMode = "english" | "sinhala" | "both";
