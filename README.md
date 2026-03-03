@@ -10,13 +10,6 @@ Bird Vision is an AI-powered web dashboard designed to recognize bird species wi
 - **Analytics:** Track detection statistics and trends.  
 - **Settings:** Manage language preferences, notifications, and system options.
 
-## Installation
-
-1. Clone the repository:  
-   ```bash
-   git clone <your-repo-url>
-   # Bird Vision – Bird Species Recognition Dashboard
-
 Bird Vision is an AI-powered web dashboard designed to recognize bird species with support for English and Sinhala. It provides live detection, image/video uploads, analytics, and settings management through a modern and immersive interface.
 
 ## Features
@@ -31,6 +24,6 @@ Bird Vision is an AI-powered web dashboard designed to recognize bird species wi
 
 1. Clone the repository:  
    ```bash
-   git clone <your-repo-url>
+   git clone <[your-repo-url](https://github.com/IsuruParindya/Bird-Dashboard)>
 npm install
 npm start
