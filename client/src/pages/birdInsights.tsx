@@ -155,17 +155,13 @@ export default function BirdInsights() {
                       className="h-full w-full object-cover"
                     />
                   </div>
-                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 rounded-[10px] bg-background/90 border border-border/50 px-5 py-2 text-xs font-medium text-muted-foreground shadow-md min-w-[140px] text-center whitespace-nowrap">
-                  {t.imageDesc}
-                </div>
+                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 rounded-[10px] bg-white/90 border border-slate-200 px-5 py-2 text-xs font-medium text-status-busy shadow-md min-w-[140px] whitespace-nowrap">
+                  <BadgeAlert size={13} className="shrink-0" />
+                    <span>{t.imageDesc}</span>
+                  </div>
                 </div>
 
                 <div>
-                  <div className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-4 py-2 text-sm font-semibold text-red-500 mb-4">
-                    <BadgeAlert size={16} />
-                    {t.badge}
-                  </div>
-
                   <h2 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight">
                     {rareBird.englishName}
                   </h2>
