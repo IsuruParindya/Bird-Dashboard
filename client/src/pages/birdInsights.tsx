@@ -143,7 +143,7 @@ export default function BirdInsights() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 xl:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-5 gap-6">
           <div className="xl:col-span-3 space-y-8">
             <div className="glass-card rounded-[28px] p-6 lg:p-8">
               <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] gap-8 items-center">
@@ -213,9 +213,9 @@ export default function BirdInsights() {
           </div>
 
           <div className="xl:col-span-2">
-            <div className="glass-card rounded-[28px] p-6 lg:p-7 h-full">
+            <div className="glass-card rounded-[28px] p-5 lg:p-7 h-full">
               <div className="flex items-center gap-3 pb-5 border-b border-border/50">
-                <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
+                <div className="h-12 w-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
                   <Bird size={24} />
                 </div>
                 <div>
