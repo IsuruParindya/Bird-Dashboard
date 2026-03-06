@@ -8,7 +8,7 @@ import { queryClient } from "./lib/queryClient";
 import Dashboard from "./pages/dashboard";
 import LiveDetection from "./pages/live-detection";
 import Upload from "./pages/upload";
-import Analytics from "./pages/analytics";
+import BirdInsights from "./pages/birdInsights";
 import Settings from "./pages/settings";
 import NotFound from "@/pages/not-found";
 
@@ -21,7 +21,7 @@ function Router() {
       <Route path="/" component={Dashboard} />
       <Route path="/live" component={LiveDetection} />
       <Route path="/upload" component={Upload} />
-      <Route path="/analytics" component={Analytics} />
+      <Route path="/birdinsights" component={BirdInsights} />
       <Route path="/settings" component={Settings} />
       <Route path="*" component={NotFound} />
     </Switch>

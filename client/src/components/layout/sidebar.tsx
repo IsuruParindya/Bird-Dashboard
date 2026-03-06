@@ -6,7 +6,7 @@ const navItems = [
   { href: "/", label: "Dashboard", icon: LayoutDashboard },
   { href: "/live", label: "Live Detection", icon: Cctv },
   { href: "/upload", label: "Upload", icon: FolderUp },
-  { href: "/analytics", label: "Analytics", icon: ChartSpline },
+  { href: "/birdinsights", label: "Bird Insights", icon: ChartSpline },
   { href: "/settings", label: "Settings", icon: Settings },
 ];
 
