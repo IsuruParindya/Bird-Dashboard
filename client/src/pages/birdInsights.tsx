@@ -14,7 +14,7 @@ type LangMode = "english" | "sinhala" | "both";
 
 const rareBird = {
   englishName: "Sri Lanka Blue Magpie",
-  sinhalaName: "ශ්‍රී ලංකා නිල් මැග්පයි",
+  sinhalaName: "කැහිබෙල්ලා",
   scientificName: "Urocissa ornata",
   eatsEnglish: "Insects, small fruits, seeds, and small animals",
   eatsSinhala: "කෘමීන්, කුඩා පළතුරු, ගෙඩි සහ කුඩා සත්ත්වයන්",
@@ -155,8 +155,8 @@ export default function BirdInsights() {
                       className="h-full w-full object-cover"
                     />
                   </div>
-                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 rounded-[10px] bg-white/90 border border-slate-200 px-5 py-2 text-xs font-medium text-status-busy shadow-md min-w-[140px] whitespace-nowrap">
-                  <BadgeAlert size={13} className="shrink-0" />
+                  <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 rounded-[10px] bg-white/90 border border-slate-200 px-5 py-2 text-xs font-medium text-status-busy shadow-md min-w-[140px] whitespace-nowrap">
+                    <BadgeAlert size={13} className="shrink-0" />
                     <span>{t.imageDesc}</span>
                   </div>
                 </div>

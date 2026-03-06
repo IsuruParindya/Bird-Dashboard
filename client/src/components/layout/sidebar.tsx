@@ -1,12 +1,12 @@
 import { Link, useLocation } from "wouter";
-import { LayoutDashboard, FolderUp, ChartSpline, Settings, Bird, Cctv } from "lucide-react";
+import { LayoutDashboard, FolderUp, Binoculars, Settings, Bird, Cctv } from "lucide-react";
 import { motion } from "framer-motion";
 
 const navItems = [
   { href: "/", label: "Dashboard", icon: LayoutDashboard },
   { href: "/live", label: "Live Detection", icon: Cctv },
   { href: "/upload", label: "Upload", icon: FolderUp },
-  { href: "/birdinsights", label: "Bird Insights", icon: ChartSpline },
+  { href: "/birdinsights", label: "Bird Insights", icon: Binoculars },
   { href: "/settings", label: "Settings", icon: Settings },
 ];
 
