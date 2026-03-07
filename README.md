@@ -17,7 +17,7 @@ Bird Vision is an AI-powered web dashboard designed to recognize bird species wi
 - **Dashboard:** Overview of detections, stats, and quick access to tools.  
 - **Live Detection:** Real-time bird recognition using your device camera.  
 - **Upload:** Upload images or videos to identify bird species.  
-- **Bird Insights:** Track Rarest Bird.  
+- **Bird Insights:** Track Rarest Bird Species.  
 - **Settings:** Manage language preferences, notifications, and system options.
 
 ## Installation
